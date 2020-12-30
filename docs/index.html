@@ -3,40 +3,46 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
-		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-	<div class="bgimage">
-		<div class="menu">
-			
-			<div class="leftmenu">
-				<h4> THAPATECHNICAL </h4>
+	<section>
+		<h1>Check What Your Name Say About Your Personality?</h1>
+		<div class="divCenter">
+			<div class="divDetails">
+				<label>Enter Your Name Please!</label><br>
+				<input type="text" name="" class="txtName">
 			</div>
-
-			<div class="rightmenu">
-				<ul>
-					<li id="fisrtlist"> HOME </li>
-					<li> Services </li>
-					<li> Works</li>
-					<li> Aboust us</li>
-					<li>  Blogs </li>
-					<li>contact</li>
-				</ul>
+			<div class="divImg">
+				<img src="image.jpg" class="imgid" width="300" height="300">
 			</div>
-
+			<button>View Your Personality</button>
 		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$('button').click(function(){
+				const name=$('.txtName').val();
+				//alert(name);
+				$('.imgid').attr('src',`https://joeschmoe.io/api/v1/${name}`)
+				const calledName=$('.imgid');
+				console.log(calledName);
+			});
+		});
+		 //$(document).ready(function(){
+  //$('button').click(function(){
+   //const name = $('#txtName').val();
+  // alert(name);
+  // $('.imgid').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+   //const b = $('.imgid');
+  // console.log(b);
 
-		<div class="text">
-			<h4> DESIGN • DEVELOPMENT • BRANDING </h4>
-			<h1> CREATIVE & EXPERIENCED </h1>
-			<h3> WE ARE THE ONE OF THE WORLD’S TOP CREATIVE DESIGN AGENCIES </h3>
-			<button id="buttonone"> like share </button>
-			<button id="buttontwo"> Subscribe </button> 
-		</div>
+  //});
+ //});
 
-	</div>
-
+  
+	</script>
 </body>
 </html>
