@@ -1,119 +1,37 @@
-*{
-	margin:0px;
-	padding:0px;
+
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Permanent Marker', cursive;}
+
+section{width: 100%; height: 100vh; display: flex; justify-content: center; flex-direction: column; align-items: center; background: #FFB533}
+
+section h1{ text-shadow: 2px 5px 5px #FF4C33; word-spacing: 10px; margin-bottom: 15px; 
+ font-size:2.5rem; text-transform: uppercase; letter-spacing: 2px; color: white;}
+.divCenter{ width: 60%; height: 500px; box-shadow:2px 2px 2px 5px white;  display: flex;  
+flex-direction: column;  align-items: center; justify-content: center; background: #FF334C; color: white;}
+
+
+
+.divDetails{ text-align: center; text-transform: uppercase; }
+
+.divDetails label{font-size: 1.4rem;}
+.divDetails input { padding: 10px; background-color: #ff6b81; color: white; text-align: center;}
+.divDetails input[type=text]:focus {
+  border: 3px solid #555;
 }
 
-.bgimage{
-	background-image: url('tt.jpg');
-	background-size: 100% 110%;
-	width: 100%;
-	height: 100vh;
-}
-
-.menu{
-
-	width: 100%;
-	height: 100px;
-	background-color: rgba(0,0,0,0.5);
-}
-
-.leftmenu{
-	width: 20%;
-	line-height: 100px;
-	float: left;
-/*	background-color: yellow;*/
-}
-
-.leftmenu h4{
-	padding-left: 70px;
-	font-weight: bold;
-	color: white;
-	font-size: 22px;
-	font-family: 'Montserrat', sans-serif;
-}
+.divImg {margin: 30px 0;}
+.txtName{font-size: 1.5rem;}
+button {
+  background: #3498db;
+  width: 280px;
+  padding: 4px 0;
+  border-radius: 3px;
+  color:white;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+    background-color: darken(#f1c40f, 20%);
+   }
 
 
-.rightmenu{
-	width:70%;
-	height: 100px;
-	float: right;
-/*	background-color: red; */
-}
-
-.rightmenu ul{
-	margin-left: 200px;
-}
-
-.rightmenu ul li {
-	font-family: 'Montserrat', sans-serif;
-	display: inline-block;
-	list-style: none;
-	font-size: 15px;
-	color:white;
-	font-weight: bold;
-	line-height: 100px;
-	margin-left: 40px;
-	text-transform: uppercase;
-
-}
-
-#fisrtlist{
-	color: orange;
-}
-
-.rightmenu ul li:hover{
-	color: orange;
-}
-
-
-.text{
-	width: 100%;
-	margin-top: 185px;
-	text-transform: uppercase;
-	text-align: center;
-	color:white;
-}
-
-.text h4{
-
-	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.text h1{
-	font-size:62px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700px;
-	margin:14px 0px;
-}
-
-.text h3{
-	font-size: 12px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-
-#buttonone{
-	background-color: white;
-	border: none;
-	font-size: 12px;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 40px;
-	width: 150px;
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 25px;
-	border: 3px solid white;
-}
-
-#buttontwo{
-
-	background-color: transparent;
-	border: none;
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-	line-height: 40px;
-	border: 3px solid white;
-	width: 150px;
-}
+  button:hover {
+    cursor: pointer;
+  }
